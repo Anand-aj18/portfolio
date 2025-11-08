@@ -1,0 +1,32 @@
+:root{
+  --bg:#f7dfe0;
+  --panel:#ffffff;
+  --dark:#1b1b1b;
+}
+*{box-sizing:border-box}
+body{height:100%;margin:0;font-family:Inter, Arial, sans-serif;color:var(--dark);background:var(--bg);}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:18px 56px;}
+.brand{font-weight:700;letter-spacing:1.5px}
+.top-nav a{margin-left:18px;text-decoration:none;color:rgba(0,0,0,0.6);font-weight:600}
+.hero{width:90%;max-width:1200px;margin:22px auto;display:flex;gap:0;background:transparent;border-radius:2px;overflow:hidden;min-height:420px}
+.hero-left, .hero-right{flex:1;padding:36px;min-height:420px;position:relative}
+.blur-bg{position:absolute;inset:0;background: radial-gradient(circle at 20% 30%, #ffb4a8 0 18%, transparent 18%), radial-gradient(circle at 75% 80%, #a8d9ff 0 18%, transparent 18%), linear-gradient(135deg,#ffd8c8,#f8dbe0);filter: blur(18px); transform: scale(1.05);z-index:0}
+.avatar-wrap{position:relative;z-index:2;display:flex;justify-content:center;align-items:center;height:100%}
+.avatar{width:260px;height:260px;border-radius:50%;object-fit:cover;border:8px solid rgba(255,255,255,0.95);box-shadow:0 8px 24px rgba(0,0,0,0.12)}
+.hero-right{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:64px 56px}
+.hero-right h1{font-size:40px;margin:0 0 10px 0;font-weight:600}
+.tagline{font-style:italic;color:rgba(0,0,0,0.6);max-width:420px;margin-bottom:24px}
+.cta-list{display:flex;flex-direction:column;gap:12px;width:100%;max-width:360px}
+.cta{display:block;text-decoration:none;padding:12px 20px;border-radius:6px;background:transparent;border:2px solid rgba(0,0,0,0.08);text-align:center;font-weight:700}
+.projects-section{width:90%;max-width:1200px;margin:28px auto;padding:22px}
+.projects-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.project-card{background:var(--panel);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+.contact-section{width:90%;max-width:700px;margin:28px auto;padding:22px}
+.contact-section input, .contact-section textarea{width:100%;padding:10px;margin-bottom:8px;border-radius:8px;border:1px solid rgba(0,0,0,0.12)}
+.contact-section button{padding:12px 18px;border-radius:8px;background:#7b3fdc;color:white;border:none}
+.site-footer{margin-top:28px;padding:18px 56px;text-align:center;color:rgba(0,0,0,0.6)}
+@media (max-width:900px){
+  .hero{flex-direction:column}
+  .avatar{width:200px;height:200px}
+  .hero-right h1{font-size:30px}
+}
