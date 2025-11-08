@@ -1,0 +1,1 @@
+INSERT INTO ABOUT (name, title, bio, avatar_url) VALUES ('Anand Raj','Java Full Stack Developer','Building microservices and clean frontends.','/assets/avatar.jpg');
